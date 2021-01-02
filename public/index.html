@@ -9,7 +9,7 @@
 <div class="h-full">
     <nav class="h-36 w-full bg-gray-600 flex flex-row justify-between items-center content-center " id="navbar">
        <div class="h-28 w-36 " id="menu-icon">
-                <button class="h-full w-full" onclick="">
+                <button class="h-full w-full" onclick="displayMenu()">
                     <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/menu-sort.svg"></a>></image></svg>
                 </button>
            </div>
@@ -22,6 +22,13 @@
                 </button>
            </div>
         </nav>
+        <div class="hide" id="display">
+            <p>Inicio</p>
+            <p>Alimentos</p>
+            <p>Bebidas</p>
+            <p>Ubicación</p>
+        </div>
+
 
         <div class="h-96 w-full" id="banner">
             <img  class="h-full w-full object-cover" src="../src/img/banner.jpg" alt="">
@@ -48,5 +55,36 @@
             <!--</div>-->
         </div>
     </div>
+    <style>
+        #display{
+           width: 100%; 
+           background-color: rgba(75, 85, 99);
+           height: 50%;
+          animation: openMenu 500ms ease-in-out; 
+        }
+       .hide{
+          display:none; 
+       } 
+       .show{
+          display: block; 
+       }
+       @keyframes openMenu {
+          from{
+            height: 0%;
+          } 
+          to{
+            height: 50%;
+          }
+       } 
+    </style>
+    <script>
+        function displayMenu (){
+            const menu = document.getElementById("display");
+            menu.classList.toggle("hide");
+            menu.classList.toggle("show");
+        }
+
+    </script>
+    
 </body>
 </html>
