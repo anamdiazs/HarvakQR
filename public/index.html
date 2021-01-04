@@ -8,25 +8,33 @@
 <body class="h-screen">
 <div class="h-full">
     <nav class="h-36 w-full bg-gray-600 flex flex-row justify-between items-center content-center " id="navbar">
-       <div class="h-28 w-36 " id="menu-icon">
-                <button class="h-full w-full" onclick="displayMenu()">
-                    <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/menu-sort.svg"></a>></image></svg>
-                </button>
-           </div>
+        <div class="h-28 w-36 " id="menu-icon">
+                    <button class="h-full w-full" onclick="displayMenu()">
+                        <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/menu-sort.svg"></a>></image></svg>
+                    </button>
+            </div>
 
-                <p class="text-white text-6xl">Harvak Coffee</p>
-           
-           <div class="h-24 w-36" id="call-icon">
-                <button class="h-full w-full">
-                    <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/phone.svg"></a>></image></svg>
-                </button>
-           </div>
+                    <p class="text-white text-6xl">Harvak Coffee</p>
+            
+            <div class="h-24 w-36" id="call-icon">
+                    <button class="h-full w-full">
+                        <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/phone.svg"></a>></image></svg>
+                    </button>
+            </div>
         </nav>
         <div class="hide" id="display">
-            <p>Inicio</p>
-            <p>Alimentos</p>
-            <p>Bebidas</p>
-            <p>Ubicación</p>
+            <ul class=" flex space-y-12 flex-col items-center text-6xl text-white">
+                <a href="../public/index.html">
+                <li class="mt-20">Inicio</li>
+                </a>
+                <a href="../public/food.html">
+                <li>Alimentos</li>
+                </a>
+                <a href="../public/beverages.html">
+                <li>Bebidas</li>
+                </a>
+                <li>Contacto</li>
+            </ul>
         </div>
 
 
@@ -56,25 +64,28 @@
     </div>
     <style>
         #display{
-           width: 100%; 
-           background-color: rgba(75, 85, 99);
-           height: 50%;
-          animation: openMenu 500ms ease-in-out; 
+            width: 100%; 
+            background-color: rgba(75, 85, 99);
+            height: 30%;
+            animation: openMenu 500ms ease-in-out; 
         }
-       .hide{
-          display:none; 
-       } 
-       .show{
-          display: block; 
-       }
-       @keyframes openMenu {
-          from{
+        .hide{
+            display:none; 
+        } 
+        .show{
+            display: block; 
+        }
+        @keyframes openMenu {
+            from{
             height: 0%;
-          } 
-          to{
-            height: 50%;
-          }
-       } 
+            } 
+            to{
+            height: 30%;
+            }
+        } 
+        @keyframes closeMenu {
+            from 
+        } 
     </style>
     <script>
         function displayMenu (){
