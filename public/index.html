@@ -9,10 +9,10 @@
 <div class="h-full">
     <nav class="h-36 w-full bg-gray-600 flex flex-row justify-between items-center content-center " id="navbar">
         <div class="h-28 w-36 " id="menu-icon">
-                    <button class="h-full w-full" onclick="displayMenu()">
-                        <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/menu-sort.svg"></a>></image></svg>
-                    </button>
-            </div>
+            <button class="h-full w-full" onclick="displayMenu()">
+                <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/menu-sort.svg"></a>></image></svg>
+            </button>
+        </div>
 
                     <p class="text-white text-6xl">Harvak Coffee</p>
             
@@ -23,7 +23,7 @@
             </div>
         </nav>
         <div class="hide" id="display">
-            <ul class=" flex space-y-12 flex-col items-center text-6xl text-white">
+            <ul class="flex space-y-12 flex-col items-center text-6xl text-white">
                 <a href="../public/index.html">
                 <li class="mt-20">Inicio</li>
                 </a>
@@ -75,17 +75,18 @@
         .show{
             display: block; 
         }
+
         @keyframes openMenu {
             from{
-            height: 0%;
+                height: 0%;
             } 
             to{
-            height: 30%;
+                height: 30%;
             }
         } 
-        @keyframes closeMenu {
+        /* @keyframes closeMenu {
             from 
-        } 
+        }  */
     </style>
     <script>
         function displayMenu (){
