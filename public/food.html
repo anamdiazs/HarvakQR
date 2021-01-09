@@ -10,7 +10,7 @@
    <div class="">
     <nav class="h-36 w-full bg-gray-600 flex flex-row justify-between items-center content-center " id="navbar">
        <div class="h-28 w-36 " id="menu-icon">
-                <button class="h-full w-full">
+                <button class="h-full w-full" onclick="displayMenu()">
                     <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/menu-sort.svg"></a>></image></svg>
                 </button>
            </div>
@@ -23,6 +23,21 @@
                 </button>
            </div>
         </nav>
+        <div class="hide" id="display">
+            <ul class="flex space-y-12 flex-col items-center text-6xl text-white">
+                <a href="../public/index.html">
+                <li class="mt-20">Inicio</li>
+                </a>
+                <a href="../public/food.html">
+                <li>Alimentos</li>
+                </a>
+                <a href="../public/beverages.html">
+                <li>Bebidas</li>
+                </a>
+                <li>Contacto</li>
+            </ul>
+        </div>
+
         <div class="w-full p-10">
             <h2 class="text-left text-7xl ">Alimentos</h2>
         </div>
@@ -180,5 +195,39 @@
             
         </div>
    </div>
+   <style>
+        #display{
+            width: 100%; 
+            background-color: rgba(75, 85, 99);
+            height: 30%;
+            animation: openMenu 500ms ease-in-out; 
+        }
+        .hide{
+            display:none; 
+        } 
+        .show{
+            display: block; 
+        }
+
+        @keyframes openMenu {
+            from{
+                height: 0%;
+            } 
+            to{
+                height: 30%;
+            }
+        } 
+        /* @keyframes closeMenu {
+            from 
+        }  */
+    </style>
+    <script>
+        function displayMenu (){
+            const menu = document.getElementById("display");
+            menu.classList.toggle("hide");
+            menu.classList.toggle("show");
+        }
+
+    </script>
 </body>
 </html>
