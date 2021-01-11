@@ -8,18 +8,19 @@
 </head>
 <body class="h-screen">
 <div class="h-full">
-    <nav class="h-36 w-full bg-gray-600 flex flex-row justify-between items-center content-center " id="navbar">
-        <div class="h-28 w-36 " id="menu-icon">
+    <nav class="h-36 w-full lg:h-12 bg-gray-600 flex flex-row justify-between items-center content-center " id="navbar">
+        <div class="h-28 w-36 lg:h-12 lg:w-12" id="menu-icon">
             <button class="h-full w-full" onclick="displayMenu()">
-                <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/menu-sort.svg"></a>></image></svg>
+                <svg class="h-full w-full"><image class="h-24 w-24 lg:hidden"<a href="../src/img/menu-sort.svg"></a>></image></svg>
             </button>
         </div>
-
-                    <p class="text-white text-6xl">Harvak Coffee</p>
-            
+            <ul>
+                <li></li>
+            </ul>
+            <p class="text-white text-6xl lg:hidden">Harvak Coffee</p>
             <div class="h-24 w-36" id="call-icon">
                     <button class="h-full w-full">
-                        <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/phone.svg"></a>></image></svg>
+                        <svg class="h-full w-full"><image class="h-24 w-24 lg:hidden"<a href="../src/img/phone.svg"></a>></image></svg>
                     </button>
             </div>
         </nav>
