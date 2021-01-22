@@ -7,21 +7,31 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class=" bg-gray-100">
-   <div class="">
-    <nav class="h-36 w-full bg-gray-600 flex flex-row justify-between items-center content-center " id="navbar">
-       <div class="h-28 w-36 " id="menu-icon">
-                <button class="h-full w-full" onclick="displayMenu()">
-                    <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/menu-sort.svg"></a>></image></svg>
-                </button>
-           </div>
-
-                <p class="text-white text-6xl">Harvak Coffee</p>
-           
-           <div class="h-24 w-36" id="call-icon">
-                <button class="h-full w-full">
-                    <svg class="h-full w-full"><image class="h-24 w-24"<a href="../src/img/phone.svg"></a>></image></svg>
-                </button>
-           </div>
+    <div class="">
+        <nav class="h-36 w-full lg:h-12 bg-gray-600 flex flex-row justify-between items-center content-center " id="navbar">
+        <div class="h-28 w-36 " id="menu-icon">
+                    <button class="h-full w-full" onclick="displayMenu()">
+                        <svg class="h-full w-full"><image class="h-24 w-24 lg:hidden"<a href="../src/img/menu-sort.svg"></a>></image></svg>
+                    </button>
+        </div>
+                <a class="hidden lg:flex" href="../public/index.html">
+                    <p class="text-white">Inicio</p>
+                </a>
+                <a class="hidden lg:flex" href="../public/food.html">
+                    <p class="text-white">Alimentos</p>
+                </a>
+                <a class="hidden lg:flex" href="../public/beverages.html">
+                    <p class="text-white">Bebidas</p>
+                </a>
+                <a class="hidden lg:flex" href="">
+                    <p class="text-white">Nosotros</p>
+                </a>
+                <p class="text-white text-6xl lg:hidden">Harvak Coffee</p>
+        <div class="h-24 w-36" id="call-icon">
+            <button class="h-full w-full">
+                <svg class="h-full w-full"><image class="h-24 w-24 lg:hidden"<a href="../src/img/phone.svg"></a>></image></svg>
+            </button>
+        </div>
         </nav>
         <div class="hide" id="display">
             <ul class="flex space-y-12 flex-col items-center text-6xl text-white">
@@ -68,8 +78,7 @@
                 <div class="h-64 w-full">
                     <img class="w-full h-full object-cover" src="../src/img/enfrijoladas.jpeg" alt="">
                 </div>
-                <div class="h-24 w-full
- bg-white" id="title" >
+                <div class="h-24 w-fullbg-white" id="title" >
                     <p class="text-4xl font-semibold">Enfrijoladas</p>
                     <p class="text-4xl font-bold text-right mr-6">$45</p>                    
                 </div>
@@ -98,9 +107,9 @@
             </div>
             
             <div class="w-2/5 " id="card">
-               <div class="h-64 w-full">
-                   <img class="w-full h-full object-cover" src="../src/img/molletes.png" alt="">
-               </div> 
+                <div class="h-64 w-full">
+                    <img class="w-full h-full object-cover" src="../src/img/molletes.png" alt="">
+                </div> 
                 <div class="h-24 w-full bg-white" id="title" >
                     <p class="text-4xl font-semibold">Molletes</p>
                     <p class="text-4xl font-bold text-right mr-6">$35</p>                    
@@ -120,9 +129,9 @@
             </div>
 
             <div class="w-2/5 " id="card">
-              <div class="h-64 w-full">
-                  <img class="w-full h-full object-cover" src="../src/img/sandwich.jpg" alt="">
-              </div>  
+                <div class="h-64 w-full">
+                    <img class="w-full h-full object-cover" src="../src/img/sandwich.jpg" alt="">
+                </div>  
                 <div class="h-24 w-full bg-white" id="title" >
                     <p class="text-4xl font-semibold">Croque Monseur</p>
                     <p class="text-4xl font-bold text-right mr-6">$40</p>                    
@@ -131,8 +140,8 @@
             </div>
             
             <div class="w-2/5 " id="card">
-               <div class="h-64 w-full">
-                   <img class="w-full h-full object-cover" src="../src/img/baguette.png" alt="">
+                <div class="h-64 w-full">
+                    <img class="w-full h-full object-cover" src="../src/img/baguette.png" alt="">
                 </div> 
                 <div class="h-24 w-full bg-white" id="title" >
                     <p class="text-4xl font-semibold">Baguette</p>
@@ -141,9 +150,9 @@
 
             </div>
             <div class="w-2/5 mb-7 " id="card">
-               <div class="h-64 w-full">
-                   <img class="w-full h-full object-cover" src="../src/img/pechga.jpeg" alt="">
-               </div> 
+                <div class="h-64 w-full">
+                    <img class="w-full h-full object-cover" src="../src/img/pechga.jpeg" alt="">
+                </div> 
                 <div class="h-24 w-full bg-white" id="title" >
                     <p class="text-4xl font-semibold">Pechuga</p>
                     <p class="text-4xl font-bold text-right mr-6">$50</p>                    
@@ -194,8 +203,8 @@
             </div>
             
         </div>
-   </div>
-   <style>
+    </div>
+    <style>
         #display{
             width: 100%; 
             background-color: rgba(75, 85, 99);
